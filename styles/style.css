@@ -3,6 +3,16 @@
   margin: 0;
 }
 
+body {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
 /* Sections */
 
 section {
@@ -25,19 +35,55 @@ section {
 
 /* Top */
 
+.profile-pic {
+  border-radius: 300px;
+  width: calc(100% / 4 - 20px);
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+}
+
 #about {
   background-color: rgba(255, 255, 255, 0.9);
   padding: 30px;
   margin: 0 auto;
   width: calc(100% / 2);
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+hr.about {
+  margin: 20px 0px 20px 0px;
+  border: 0px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 5px;
+  max-width: 70%;
 }
 
 .icons {
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 .icons img {
   width: 50px;
+}
+
+/* Software Engineering Stack */
+
+.stack {
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(119, 205, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(119, 205, 255, 1) 0%,
+    rgba(119, 205, 255, 1) 50%,
+    rgba(119, 205, 255, 1) 100%
+  );
 }
 
 .project-container {
@@ -72,13 +118,20 @@ section {
 
 .proj {
   width: calc(100% / 3 - 30px);
-  border: 1px solid rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(0, 0, 0, 0.1);
   margin-bottom: 30px;
-  padding: 10px;
+  padding: 20px;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+}
+
+.proj h4 {
+  margin-top: 5px;
 }
 
 h4 span {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 5px 15px 5px 15px;
 }
 
 .proj img {
@@ -86,7 +139,7 @@ h4 span {
   margin-bottom: 10px;
   /* max-height: calc(100% / 2 - 30px); */
   /* max-height: 20%; */
-  border: 1px solid rgba(0, 0, 0, 1);
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .bottom {
@@ -95,4 +148,5 @@ h4 span {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
