@@ -4,17 +4,121 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Script -->
+    <script src="scripts/script.js" charset="utf-8"></script>
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/style.css" />
 
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
+    <!--  -->
     <title>Document</title>
   </head>
   <body>
+    <!-- Project Popup Boxes -->
+    <div id="popup-container">
+      <!-- Project 4 -->
+      <div id="project-4" class="popup">
+        <img
+          src="assets/aesthetic-thumbnail.png"
+          alt="Project Four Thumbnail"
+        />
+        <div class="popup-text">
+          <h4><span>Aesthetic Catalogue</span></h4>
+          <p>
+            Full-stack application with CRUD functionality. I created a Postgres
+            database which used a Python Django API with the Django REST
+            framework to serve its data. The front-end is built with React and
+            uses CSS and Bootstrap for styling. The database utilised many to
+            one and many to many relationships.
+          </p>
+          <p>
+            The app is a catalogue of design aesthetics that have influenced
+            mainstream culture and consumer ephemera from the middle of the 20th
+            century - based on Consumer Aesthetics Research Institute (CARI) and
+            Pinterest. Users can register and log in to enable them to add,
+            delete and edit posts through a secure route. These posts can be
+            categorised under chosen aesthetics and tags. They are also able to
+            comment on individual posts.
+          </p>
+          <div class="popup-link">
+            <a href="" target="_blank">Project</a>
+            <a href="https://github.com/eli099/SEI-Project-Four" target="_blank">ReadMe</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 2 -->
+      <div id="project-2" class="popup">
+        <img src="assets/aic-thumbnail.png" alt="Project Two Thumbnail" />
+        <div class="popup-text">
+          <h4><span>Art Institute of Chicago</span></h4>
+          <p>
+            React app that consumes the Art Institute of Chicago's open-source
+            API. The app allows users to navigate the AIC's regularly updated
+            collection of art through filters and a search bar. I took charge of
+            the UX/UI design of the app, using a mixture of React Bootstrap and
+            Sass.
+          </p>
+          <div class="popup-link">
+            <a href="https://aic-eliott.netlify.app/" title="" target="_blank">Project</a>
+            <a href="https://github.com/eli099/SEI-project-two" title="" target="_blank">ReadMe</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 3 -->
+      <div id="project-3" class="popup">
+        <img src="assets/natural-beauty-thumbnail.png" alt="Project Three Thumbnail" />
+        <div class="popup-text">
+          <h4><span>Natural Beauty</span></h4>
+          <p>
+            MERN stack application with CRUD functionality using Mongoose ORM,
+            Bootstrap and Sass. The app is focused around National Parks in the
+            UK and users can navigate through national park related information
+            through an interactive map (implementing MapBox GL JS).
+          </p>
+          <p>
+            I contributed backend functionality - database schema, middleware,
+            database requests (get, post, delete) & endpoints, seeding & seed
+            data, routing and part of the authentication process. I created
+            frontend requests for logging in, registering and showing a logged
+            in user's information, the ability for a user to add/remove
+            favourites and display this on their profile page. I led the UI/UX
+            design of the Nav bar and login/register pages, styling mostly with
+            Sass.
+          </p>
+          <div class="popup-link">
+            <a href="" target="_blank">Project</a>
+            <a href="https://github.com/eli099/SEI-Project-Three" target="_blank">ReadMe</a>
+          </div>
+        </div>
+      </div>
+      <!-- Project 1 -->
+      <div id="project-1" class="popup">
+        <img src="assets/homepage.png" alt="Project One Thumbnail" />
+        <div class="popup-text">
+          <h4><span>Snake</span></h4>
+          <p>
+            Classic snake game styled with CSS and using JavaScript to
+            manipulate the DOM, and design logic to check if the user loses.
+            Grid movement is controlled by the user pressing the keyboard arrow
+            keys.
+          </p>
+          <div class="popup-link">
+            <a href="https://eli099.github.io/SEI-Project-One/" target="_blank">Project</a>
+            <a href="https://github.com/eli099/SEI-Project-One" target="_blank">ReadMe</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
     <!-- About Section -->
     <section class="top">
       <div id="about">
@@ -24,77 +128,195 @@
           class="profile-pic"
         />
         <div class="about-text">
-          <h1>Hi, I'm Eliott ✨</h1>
-          <h2>
-            I'm a software engineer with a background<br /> in design and photography.
+          <h2 class="norm">
+            <span>Hi, I'm</span>&nbsp;&nbsp;<span class="emp">Eliott</span>
           </h2>
+          <br />
+          <h3 class="norm">
+            I'm a software engineer with a background in
+            <span class="emp-2"> <a href="#bottom">design</a> </span> and
+            <span class="emp-2"><a href="#bottom">photography</a></span
+            >.
+          </h3>
           <hr class="about" />
           <div class="icons">
-            <a href=""><img src="assets/icons8-github-100.png" alt="" /></a>
-            <a href=""
+            <address>
+            <a href="https://github.com/eli099" target="_blank"><img src="assets/icons8-github-100.png" alt="" /></a>
+            <a href="https://www.linkedin.com/in/eliottmckenzie/" target="_blank"
               ><img src="assets/icons8-linkedin-circled-100.png" alt=""
             /></a>
-            <a href=""
+            <a href="mailto:hello@eliottmckenzie.dev" target="_blank"
               ><img src="assets/icons8-circled-envelope-96.png" alt=""
             /></a>
+            <address>
           </div>
         </div>
       </div>
     </section>
     <!-- Stack -->
     <section class="stack">
-      
-      <div id="about">
-        <h1><span style="border-bottom: 1px solid rgba(0,0,0,0.3);">Stack</span></h1>
+      <div id="about" class="stack-class">
+        <h1>
+          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)">Stack</span>
+        </h1>
         <ul class="languages">
-          <li> <img src="assets/stack/icons8-javascript.gif" alt="JavaScript"> <h4><span>JavaScript</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-react.gif" alt="React"> <h4><span>React</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-html-5-240.png" alt=""> <h4><span>HTML</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-css3-240.png" alt=""> <h4><span>CSS</span></h4>  </li>
-          <li> <img src="assets/stack/bootstrap-logo-shadow.png" alt=""> <h4><span>Bootstrap</span></h4>  </li>
-          <li> <img src="assets/stack/react-bootstrap.svg" alt=""> <h4><span>React Bootstrap</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-python.gif" alt=""> <h4><span>Python</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-django-240.png" alt=""> <h4><span>Django</span></h4>  </li>
-          <li> <img src="assets/stack/mongodb-logo.png" alt=""> <h4><span>MongoDB</span></h4>  </li>
-          <li> <img src="assets/stack/mongoose-logo.png" alt=""> <h4><span>Mongoose</span></h4>  </li>
-          <li> <img src="assets/stack/django-rest-framework.png" alt=""> <h4><span>Django REST<br /> Framework</span></h4>  </li>
-          <li> <img src="assets/stack/express-js.png" alt=""> <h4><span>Express</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-node-js-240.png" alt=""> <h4><span>Node.js</span></h4>  </li>
-          <li> <img src="assets/stack/icons8-git-240.png" alt=""> <h4><span>Git</span></h4>  </li>
+          <li>
+            <img
+              src="assets/stack/icons8-javascript-240.png"
+              alt="JavaScript"
+            />
+            <h4><span>JavaScript</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-react-240.png" alt="React" />
+            <h4><span>React</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-html-5-240.png" alt="" />
+            <h4><span>HTML</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-css3-240.png" alt="" />
+            <h4><span>CSS</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/bootstrap-logo-shadow.png" alt="" />
+            <h4><span>Bootstrap</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/react-bootstrap.svg" alt="" />
+            <h4>
+              <span style="line-height: 55px">React</span>
+              <span>Bootstrap</span>
+            </h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-python-240.png" alt="" />
+            <h4><span>Python</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-django-240.png" alt="" />
+            <h4><span>Django</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/mongodb-logo.png" alt="" />
+            <h4><span>MongoDB</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/mongoose-logo.png" alt="" />
+            <h4><span>Mongoose</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/django-rest-framework.png" alt="" />
+            <h4>
+              <span>Django</span>
+              <span style="line-height: 55px">REST</span>
+              <span>Framework</span>
+            </h4>
+          </li>
+          <li>
+            <img src="assets/stack/express-js.png" alt="" />
+            <h4><span>Express</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-node-js-240.png" alt="" />
+            <h4><span>Node.js</span></h4>
+          </li>
+          <li>
+            <img src="assets/stack/icons8-git-240.png" alt="" />
+            <h4><span>Git</span></h4>
+          </li>
         </ul>
       </div>
     </section>
     <!-- Projects -->
     <section class="project-container">
-      <h1><span style="border-bottom: 1px solid rgba(0,0,0,0.3);">Projects</span></h1>
+      <h1>
+        <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)"
+          >Projects</span
+        >
+      </h1>
       <div class="projects-col-one">
-        <div class="proj">
+        <div class="proj" id="four">
           <img
             src="assets/aesthetic-thumbnail.png"
-            alt="Project One Thumbnail"
+            alt="Project Four Thumbnail"
+            id="four"
           />
           <h4><span>Aesthetic Catalogue</span></h4>
         </div>
-        <div class="proj">
-          <img src="assets/homepage.png" alt="Project One Thumbnail" />
+        <div class="proj" id="three">
+          <img
+            src="assets/natural-beauty-thumbnail.png"
+            alt="Project Three Thumbnail"
+            id="three"
+          />
           <h4><span>Natural Beauty</span></h4>
         </div>
       </div>
-      <div class="projects-col-one">
-        <div class="proj">
-          <img src="assets/aic-thumbnail.png" alt="Project One Thumbnail" />
+      <div class="projects-col-two">
+        <div class="proj" id="two">
+          <img
+            src="assets/aic-thumbnail.png"
+            alt="Project Two Thumbnail"
+            id="two"
+          />
           <h4><span>Art Institute of Chicago</span></h4>
         </div>
-        <div class="proj">
-          <img src="assets/homepage.png" alt="Project One Thumbnail" />
+        <div class="proj" id="one">
+          <img src="assets/homepage.png" alt="Project One Thumbnail" id="one" />
           <h4><span>Snake</span></h4>
         </div>
       </div>
     </section>
-    <section class="bottom">
-      <h1><span style="border-bottom: 1px solid rgba(0,0,0,0.3);">More</span></h1>
-      <p>In my spare time I like to <a href="">create things</a>.</p>
-      <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+    <section class="bottom" id="bottom">
+      <div id="more">
+        <h1>
+          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)">More</span>
+        </h1>
+        <div class="more-text">
+          <p>In my spare time I like to <a href="" alt="Visual Art Porfolio">create things</a>.</p>
+          <img src="assets/art.png" alt="Visual Art Porfolio Thumbnail">
+        </div>
+      </div>
+
+      <div id="more">
+        <h1>
+          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)"
+            >Interests</span
+          >
+        </h1>
+        <div class="more-text">
+          <h4>Japanese language and culture</h4>
+          <p>
+            I have been learning on and off since a teenager and have had the
+            opportunity to visit. 日本語がちょっと喋れます。
+          </p>
+
+          <h4>Photography</h4>
+          <p>
+            I enjoy both digital and film and have recently gotten
+            into portrait photography. Some of my work can be viewed <a href="">here</a>.
+          </p>
+
+          <h4>Videography and video editing</h4>
+          <p>
+            I like to capture and edit footage
+            from holidays. I also enjoy starting my own <a href="">mini projects</a> that often
+            mix phone video, 3D renders (from Blender) and motion graphics. Some
+            of my work can also be viewed here.
+          </p>
+
+          <h4>Nutrition</h4>
+          <p>
+            After transitioning to a plant-based diet I started to
+            read, watch and listen to a lot of nutrition or food related media
+          </p>
+        </div>
+      </div>
     </section>
+    <footer>
+      <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+    </footer>
   </body>
 </html>
