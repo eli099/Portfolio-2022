@@ -18,17 +18,23 @@
       rel="stylesheet"
     />
     <!--  -->
-    <title>Document</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌱</text></svg>"
+    />
+    <title>Eliott McKenzie | Full Stack Software Engineer</title>
   </head>
   <body>
-    <!-- Project Popup Boxes -->
+    <!-- ! Project Popup Boxes -->
     <div id="popup-container">
       <!-- Project 4 -->
       <div id="project-4" class="popup">
-        <img
-          src="assets/aesthetic-thumbnail.png"
-          alt="Project Four Thumbnail"
-        />
+        <div class="img-container">
+          <img
+            src="assets/aesthetic-thumbnail.png"
+            alt="Project Four Thumbnail"
+          />
+        </div>
         <div class="popup-text">
           <h4><span>Aesthetic Catalogue</span></h4>
           <p>
@@ -49,13 +55,17 @@
           </p>
           <div class="popup-link">
             <a href="" target="_blank">Project</a>
-            <a href="https://github.com/eli099/SEI-Project-Four" target="_blank">ReadMe</a>
+            <a href="https://github.com/eli099/SEI-Project-Four" target="_blank"
+              >ReadMe</a
+            >
           </div>
         </div>
       </div>
       <!-- Project 2 -->
       <div id="project-2" class="popup">
-        <img src="assets/aic-thumbnail.png" alt="Project Two Thumbnail" />
+        <div class="img-container">
+          <img src="assets/aic-thumbnail.png" alt="Project Two Thumbnail" />
+        </div>
         <div class="popup-text">
           <h4><span>Art Institute of Chicago</span></h4>
           <p>
@@ -66,14 +76,26 @@
             Sass.
           </p>
           <div class="popup-link">
-            <a href="https://aic-eliott.netlify.app/" title="" target="_blank">Project</a>
-            <a href="https://github.com/eli099/SEI-project-two" title="" target="_blank">ReadMe</a>
+            <a href="https://aic-eliott.netlify.app/" title="" target="_blank"
+              >Project</a
+            >
+            <a
+              href="https://github.com/eli099/SEI-project-two"
+              title=""
+              target="_blank"
+              >ReadMe</a
+            >
           </div>
         </div>
       </div>
       <!-- Project 3 -->
       <div id="project-3" class="popup">
-        <img src="assets/natural-beauty-thumbnail.png" alt="Project Three Thumbnail" />
+        <div class="img-container">
+          <img
+            src="assets/natural-beauty-thumbnail-2.png"
+            alt="Project Three Thumbnail"
+          />
+        </div>
         <div class="popup-text">
           <h4><span>Natural Beauty</span></h4>
           <p>
@@ -94,13 +116,19 @@
           </p>
           <div class="popup-link">
             <a href="" target="_blank">Project</a>
-            <a href="https://github.com/eli099/SEI-Project-Three" target="_blank">ReadMe</a>
+            <a
+              href="https://github.com/eli099/SEI-Project-Three"
+              target="_blank"
+              >ReadMe</a
+            >
           </div>
         </div>
       </div>
       <!-- Project 1 -->
       <div id="project-1" class="popup">
-        <img src="assets/homepage.png" alt="Project One Thumbnail" />
+        <div class="img-container">
+          <img src="assets/homepage.png" alt="Project One Thumbnail" />
+        </div>
         <div class="popup-text">
           <h4><span>Snake</span></h4>
           <p>
@@ -110,8 +138,12 @@
             keys.
           </p>
           <div class="popup-link">
-            <a href="https://eli099.github.io/SEI-Project-One/" target="_blank">Project</a>
-            <a href="https://github.com/eli099/SEI-Project-One" target="_blank">ReadMe</a>
+            <a href="https://eli099.github.io/SEI-Project-One/" target="_blank"
+              >Project</a
+            >
+            <a href="https://github.com/eli099/SEI-Project-One" target="_blank"
+              >ReadMe</a
+            >
           </div>
         </div>
       </div>
@@ -119,8 +151,21 @@
 
     <!--  -->
 
-    <!-- About Section -->
-    <section class="top">
+    <!-- ! Nav bar -->
+    <nav>
+      <div>
+        <span class="title"><a href="/">Eliott McKenzie</a></span> 
+      </div>
+      <div>
+        <a href="#stack">Technologies</a>
+        <a href="#projects">Projects</a>
+        <a href="#bottom">More</a>
+      </div>
+    </nav>
+    <!-- ! -->
+
+    <!-- ! About Section -->
+    <section class="top" id="top">
       <div id="about">
         <img
           src="assets/profile-pic.PNG"
@@ -141,151 +186,180 @@
           <hr class="about" />
           <div class="icons">
             <address>
-            <a href="https://github.com/eli099" target="_blank"><img src="assets/icons8-github-100.png" alt="" /></a>
-            <a href="https://www.linkedin.com/in/eliottmckenzie/" target="_blank"
-              ><img src="assets/icons8-linkedin-circled-100.png" alt=""
-            /></a>
-            <a href="mailto:hello@eliottmckenzie.dev" target="_blank"
-              ><img src="assets/icons8-circled-envelope-96.png" alt=""
-            /></a>
-            <address>
+              <a href="https://github.com/eli099" target="_blank"
+                ><img src="assets/icons8-github-100.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/eliottmckenzie/"
+                target="_blank"
+                ><img src="assets/icons8-linkedin-circled-100.png" alt=""
+              /></a>
+              <a href="mailto:hello@eliottmckenzie.dev" target="_blank"
+                ><img src="assets/icons8-circled-envelope-96.png" alt=""
+              /></a>
+            </address>
           </div>
         </div>
       </div>
+      <div id="headline">
+        <div class="label">About me</div>
+        <div class="headline-text">
+          I started coding for fun (with HTML and CSS) after admiring the work
+          of web developers on Tumblr. Through trial, error and pattern
+          recognition I tried to emulate different aspects in my own blog. I
+          became obsessed with using code that could express messages visually
+          and functionally through user interaction. I eventually took the step
+          to further my learning in General Assembly's Software Engineering
+          Immersive course where I learnt the fundamentals of languages and
+          frameworks such as JavaScript, Python, Node.js, MongoDB, PostgreSQL,
+          Django, Express and Mongoose.
+        </div>
+      </div>
     </section>
-    <!-- Stack -->
-    <section class="stack">
+    
+    <!-- ! Stack -->
+    <section class="stack" id="stack">
+      
+        
+      
       <div id="about" class="stack-class">
-        <h1>
-          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)">Stack</span>
-        </h1>
-        <ul class="languages">
+
+        <h1>Stack</h1>
+        
+        <ul class="grid" class="languages">
           <li>
             <img
               src="assets/stack/icons8-javascript-240.png"
               alt="JavaScript"
             />
-            <h4><span>JavaScript</span></h4>
+            <p><span>JavaScript</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-react-240.png" alt="React" />
-            <h4><span>React</span></h4>
+            <p><span>React</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-html-5-240.png" alt="" />
-            <h4><span>HTML</span></h4>
+            <p><span>HTML</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-css3-240.png" alt="" />
-            <h4><span>CSS</span></h4>
+            <p><span>CSS</span></p>
           </li>
           <li>
             <img src="assets/stack/bootstrap-logo-shadow.png" alt="" />
-            <h4><span>Bootstrap</span></h4>
+            <p><span>Bootstrap</span></p>
           </li>
           <li>
             <img src="assets/stack/react-bootstrap.svg" alt="" />
-            <h4>
-              <span style="line-height: 55px">React</span>
-              <span>Bootstrap</span>
-            </h4>
+            <p><span>
+              React Bootstrap
+            </span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-python-240.png" alt="" />
-            <h4><span>Python</span></h4>
+            <p><span>Python</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-django-240.png" alt="" />
-            <h4><span>Django</span></h4>
+            <p><span>Django</span></p>
           </li>
           <li>
             <img src="assets/stack/mongodb-logo.png" alt="" />
-            <h4><span>MongoDB</span></h4>
+            <p><span>MongoDB</span></p>
           </li>
           <li>
             <img src="assets/stack/mongoose-logo.png" alt="" />
-            <h4><span>Mongoose</span></h4>
+            <p><span>Mongoose</span></p>
           </li>
           <li>
             <img src="assets/stack/django-rest-framework.png" alt="" />
-            <h4>
-              <span>Django</span>
-              <span style="line-height: 55px">REST</span>
-              <span>Framework</span>
-            </h4>
+            <p><span>
+              Django <br />
+              REST <br />
+              Framework <br />
+            </span></p>
           </li>
           <li>
             <img src="assets/stack/express-js.png" alt="" />
-            <h4><span>Express</span></h4>
+            <p><span>Express</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-node-js-240.png" alt="" />
-            <h4><span>Node.js</span></h4>
+            <p><span>Node.js</span></p>
           </li>
           <li>
             <img src="assets/stack/icons8-git-240.png" alt="" />
-            <h4><span>Git</span></h4>
+            <p><span>Git</span></p>
           </li>
         </ul>
       </div>
     </section>
-    <!-- Projects -->
-    <section class="project-container">
-      <h1>
-        <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)"
-          >Projects</span
-        >
-      </h1>
-      <div class="projects-col-one">
-        <div class="proj" id="four">
-          <img
-            src="assets/aesthetic-thumbnail.png"
-            alt="Project Four Thumbnail"
-            id="four"
-          />
-          <h4><span>Aesthetic Catalogue</span></h4>
+    <!-- ! Projects -->
+    <section class="projects" id="projects">
+      
+      <div class="project-container">
+        <h1>
+          Projects
+        </h1>
+
+        <div class="projects-col-one">
+          <div class="proj" id="four">
+            <img
+              src="assets/aesthetic-thumbnail.png"
+              alt="Project Four Thumbnail"
+              id="four"
+            />
+            <h4><span>Aesthetic Catalogue</span></h4>
+          </div>
+          <div class="proj" id="three">
+            <img
+              src="assets/natural-beauty-thumbnail-2.png"
+              alt="Project Three Thumbnail"
+              id="three"
+            />
+            <h4><span>Natural Beauty</span></h4>
+          </div>
         </div>
-        <div class="proj" id="three">
-          <img
-            src="assets/natural-beauty-thumbnail.png"
-            alt="Project Three Thumbnail"
-            id="three"
-          />
-          <h4><span>Natural Beauty</span></h4>
+        <div class="projects-col-two">
+          <div class="proj" id="two">
+            <img
+              src="assets/aic-thumbnail.png"
+              alt="Project Two Thumbnail"
+              id="two"
+            />
+            <h4><span>Art Institute of Chicago</span></h4>
+          </div>
+          <div class="proj" id="one">
+            <img src="assets/homepage.png" alt="Project One Thumbnail" id="one" />
+            <h4><span>Snake</span></h4>
+          </div>
         </div>
       </div>
-      <div class="projects-col-two">
-        <div class="proj" id="two">
-          <img
-            src="assets/aic-thumbnail.png"
-            alt="Project Two Thumbnail"
-            id="two"
-          />
-          <h4><span>Art Institute of Chicago</span></h4>
-        </div>
-        <div class="proj" id="one">
-          <img src="assets/homepage.png" alt="Project One Thumbnail" id="one" />
-          <h4><span>Snake</span></h4>
-        </div>
-      </div>
+      
     </section>
+
+    <!-- ! Bottom -->
     <section class="bottom" id="bottom">
       <div id="more">
-        <h1>
-          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)">More</span>
-        </h1>
+        <div class="label">
+          More
+        </div>
         <div class="more-text">
-          <p>In my spare time I like to <a href="" alt="Visual Art Porfolio">create things</a>.</p>
-          <img src="assets/art.png" alt="Visual Art Porfolio Thumbnail">
+          <p style="margin-bottom: 5px;">
+            In my spare time I like to
+            <a href="/eliottmckenzie.com" alt="Visual Art Porfolio"
+              >create things</a
+            >.
+          </p>
+          <img src="assets/art.png" alt="Visual Art Porfolio Thumbnail" />
         </div>
       </div>
 
       <div id="more">
-        <h1>
-          <span style="border-bottom: 1px solid rgba(0, 0, 0, 0.3)"
-            >Interests</span
-          >
-        </h1>
+        <div class="label">
+          Interests
+        </div>
         <div class="more-text">
           <h4>Japanese language and culture</h4>
           <p>
@@ -293,30 +367,39 @@
             opportunity to visit. 日本語がちょっと喋れます。
           </p>
 
+          <hr>
+
           <h4>Photography</h4>
           <p>
-            I enjoy both digital and film and have recently gotten
-            into portrait photography. Some of my work can be viewed <a href="">here</a>.
+            I enjoy both digital and film and have recently gotten into portrait
+            photography. Some of my work can be viewed
+            <a href="/eliottmckenzie.com/photography">here</a>.
           </p>
+
+         <hr>
 
           <h4>Videography and video editing</h4>
           <p>
-            I like to capture and edit footage
-            from holidays. I also enjoy starting my own <a href="">mini projects</a> that often
-            mix phone video, 3D renders (from Blender) and motion graphics. Some
-            of my work can also be viewed here.
+            I like to capture and edit footage from holidays. I also enjoy
+            starting my own <a href="">mini projects</a> that often mix phone
+            video, 3D renders (from Blender) and motion graphics. Some of my
+            work can also be viewed
+            <a href="/eliottmckenzie.com/video">here</a>.
           </p>
+
+          <hr>
 
           <h4>Nutrition</h4>
           <p>
-            After transitioning to a plant-based diet I started to
-            read, watch and listen to a lot of nutrition or food related media
+            After transitioning to a plant-based diet I started to read, watch
+            and listen to a lot of nutrition or food related media
           </p>
         </div>
       </div>
     </section>
     <footer>
       <p>Icons by <a target="_blank" href="https://icons8.com">Icons8</a></p>
+      <p>&copy; Eliott McKenzie &hearts; 2022</p>
     </footer>
   </body>
 </html>

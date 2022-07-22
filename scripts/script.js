@@ -127,6 +127,21 @@ function init() {
     projectFour.style.visibility = 'hidden'
   }
 
+  // ! Scrollbar disappear
+
+  let scrollPos = window.scrollY
+
+  window.onscroll = function () {
+    console.log('scroll postition ->', scrollPos)
+    let currentScroll = window.scrollY
+    if (scrollPos > currentScroll) {
+      document.querySelector('nav').style.top = '0'
+    } else {
+      document.querySelector('nav').style.top = '-100px'
+    }
+    scrollPos = currentScroll
+  }
+
   // ! Events
 
   // Open project four
