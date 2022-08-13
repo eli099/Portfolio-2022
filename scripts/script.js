@@ -142,6 +142,18 @@ function init() {
     scrollPos = currentScroll
   }
 
+  // Mobile dropdown menu
+
+  const navContainer = document.querySelector('nav')
+  const navLinks = document.getElementById('nav-links')
+  const burger = document.querySelector('.burger')
+
+  function dropdown() {
+    console.log('clicked')
+    navLinks.classList.toggle('responsive')
+    navContainer.classList.toggle('responsive')
+  }
+
   // ! Events
 
   // Open project four
@@ -157,6 +169,9 @@ function init() {
   one.addEventListener('click', handleProjectOne)
 
   projectContainer.addEventListener('click', handlePopupExit)
+
+  // Mobile dropdown
+  burger.addEventListener('click', dropdown)
 
 
 

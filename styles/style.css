@@ -1,4 +1,4 @@
-/* Font imports */
+/* ! Font imports */
 
 @font-face {
   font-family: "Copycat";
@@ -33,7 +33,7 @@
   src: url("../assets/fonts/neuropol/neuropol.otf");
 }
 
-/* General */
+/* ! General */
 
 * {
   box-sizing: border-box;
@@ -92,6 +92,10 @@ h3 {
 
 /* ! Navigation */
 
+.burger {
+  display: none;
+}
+
 nav {
   top: 0;
   position: fixed;
@@ -121,7 +125,90 @@ nav span a {
   padding: 0px 0px;
 }
 
-/* Sections */
+/* ? Navigation on Phone Screen */
+
+@media only screen and (max-width: 600px) {
+  nav {
+    top: 0;
+    position: relative;
+    /* display: flex; */
+    padding: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 10px;
+    padding: 0 15px;
+  }
+
+  #nav-links {
+    /* flex-basis: 100%; */
+    width: 100%;
+  }
+
+  #nav-links a {
+    display: block;
+    /* float: left; */
+    margin: 1px 0 0 0;
+    padding: 10px;
+    border-radius: 0px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+
+  /* nav.responsive {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  } */
+
+  /* nav a {
+    display: block;
+    float: left;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 1);
+    padding: 7px 20px;
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 100px;
+  } */
+
+  #nav-links a {
+    display: none;
+  }
+  .nav-top a.burger {
+    display: inline-flex;
+    float: right;
+    background: none;
+    padding: 0;
+  }
+
+  #nav-links.responsive a {
+    /* float: none; */
+    display: block;
+    /* text-align: left; */
+  }
+
+  nav span a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.7);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 0px;
+    padding: 0px 0px;
+  }
+}
+
+/* ? Sections */
+
+/* ! Top */
 
 .top {
   height: 100vh;
@@ -129,6 +216,7 @@ nav span a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   background: rgba(255, 255, 255, 1);
   /* background: linear-gradient(
     180deg,
@@ -210,7 +298,49 @@ hr.about {
   width: 50px;
 }
 
-/* Software Engineering Stack */
+/* ? Top on Phone Screen */
+
+@media only screen and (max-width: 600px) {
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .profile-pic {
+    border-radius: 300px;
+    width: calc(100% / 2);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    margin: 10px 30px 40px 30px;
+    border: 0px solid rgb(0, 0, 0, 0.5);
+    background-color: white;
+  }
+  #about {
+    padding: 30px;
+    margin: 0px 0px 100px 0px;
+    width: 100%;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    border: 0px solid rgb(0, 0, 0, 0.2);
+  }
+
+  .about-text {
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
+    border-left: none;
+    padding: 20px 0px 0px 20px;
+  }
+
+  #headline {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+
+/* ! Software Engineering Stack */
 
 .stack {
   height: 100vh;
@@ -273,12 +403,11 @@ li span {
   transform: translateY(-100%);
   margin-top: 0px;
   margin-left: 0px; */
-  
+
   text-align: center;
   padding: 5px 10px;
   font-weight: 500;
   font-size: 0.8rem;
-  
 }
 
 li p {
@@ -316,9 +445,42 @@ li p {
 
 /* ! */
 
+/* ? Stack on Phone Screen */
 
+@media only screen and (max-width: 600px) {
+  .stack {
+    height: auto;
+    /* background-color: rgba(0, 0, 0, 0.3); */
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    /* background: rgb(255, 255, 255); */
+    margin: 50px 0px 0px 0px;
+    position: static;
+  }
 
-/*  */
+  #about.stack-class {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .stack > #about {
+    padding: 10px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  /* ! Mobile Grid test */
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
+/* ! Projects */
 
 .projects h1 {
   margin: 10px 0px 10px 0px;
@@ -387,6 +549,73 @@ h4 span {
   /* max-height: calc(100% / 2 - 30px); */
   /* max-height: 20%; */
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ? Projects on Phone Screen */
+
+@media only screen and (max-width: 600px) {
+  .projects h1 {
+    margin: 10px 0px 20px 0px;
+  }
+
+  .projects {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 20px 0px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .projects-col-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .projects-col-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 10px;
+  }
+
+  .proj {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 20px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .proj h4 {
+    margin-top: 5px;
+    font-size: 0.8rem;
+  }
+
+  h4 span {
+    border-radius: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 5px 15px 5px 15px;
+  }
+
+  .proj img {
+    max-width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* ! Popups */
@@ -544,6 +773,39 @@ div#bottom {
   max-width: 100%;
   margin-top: 10px;
   border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* ? More Section on Phone Screen */
+
+@media only screen and (max-width: 600px) {
+  .bottom {
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  div#bottom {
+    margin: 40px;
+  }
+
+  #more {
+    margin-top: 50px;
+    width: 100%;
+  }
+
+  .more-text p {
+    font-size: 1rem;
+  }
+
+  .more-text img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 /* Footer */
