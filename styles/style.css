@@ -350,7 +350,6 @@ hr.about {
   align-items: center;
   flex-direction: column;
   background: rgb(255, 255, 255);
-  /* margin: 0 auto; */
 }
 
 .stack #about {
@@ -482,7 +481,7 @@ li p {
 
 /* ? Stack on Tablet Screen */
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) and (min-width: 601px) {
   .stack {
     height: auto;
     margin: 50px 0px 0px 0px;
