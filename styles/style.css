@@ -481,7 +481,7 @@ li p {
 
 /* ? Stack on Tablet Screen */
 
-@media only screen and (min-width: 768px) and (min-width: 601px) {
+@media only screen and (min-width: 601px) and (max-width: 768px)  {
   .stack {
     height: auto;
     margin: 50px 0px 0px 0px;
