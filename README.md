@@ -11,3 +11,7 @@ Website using HTML, CSS and JavaScript.
 * (Deprecated) [Excelorate](https://jvill.gumroad.com/l/mInjl)
 * (Deprecated) [Copycat](https://www.fonts4free.net/copycat-font.html)
 * (Deprecated) [Protomo](https://www.behance.net/gallery/132336399/Protomo-Free-Font?tracking_source=project_owner_other_projects)
+
+## Assets
+
+* [Icons8](https://icons8.com/) - Social media icons
