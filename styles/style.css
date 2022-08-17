@@ -480,6 +480,43 @@ li p {
   }
 }
 
+/* ? Stack on Tablet Screen */
+
+@media only screen and (min-width: 768px) {
+  .stack {
+    height: auto;
+    margin: 50px 0px 0px 0px;
+    position: static;
+  }
+
+  .stack h1 {
+    font-size: 3rem;
+  }
+
+  #about.stack-class {
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .stack > #about {
+    padding: 10px;
+    margin: 0px 0px 50px 0px;
+  }
+
+  li span {
+    font-size: 1.3rem;
+  }
+
+  /* ! Tablet Grid test */
+
+  .grid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+}
+
 /* ! Projects */
 
 .projects h1 {
@@ -609,6 +646,7 @@ h4 span {
     border-radius: 0px;
     border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 5px 15px 5px 15px;
+    margin: 10px 0px 10px 0px;
   }
 
   .proj img {
@@ -704,6 +742,52 @@ h4 span {
   border: 1px solid;
   padding: 10px;
   margin: 0px 20px 0px 0px;
+}
+
+/* ? Popups on Phone Screen */
+
+@media only screen and (max-width: 600px) {
+  #popup-container {
+    margin: 0 auto;
+    height: 100vh;
+    width: 100%;
+    overflow: scroll;
+  }
+  
+  .popup {
+    top: 10px;
+    margin: 0px 0px 0px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: calc(100% / 1.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 15px 15px 16px 15px;
+  }
+  
+  .img-container {
+    width: 100%;
+  }
+  
+  .popup-text {
+    width: 100%;
+    border-left: none;
+    padding: 0 0 0 0;
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .popup-text p {
+    font-size: 1.2rem;
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .popup-link {
+    margin: 40px 0px 20px 0px;
+  }
+  
+  .popup-link a {
+    margin: 0px 20px 0px 0px;
+  }
 }
 
 /* ! */
