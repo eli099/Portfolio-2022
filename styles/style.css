@@ -340,6 +340,44 @@ hr.about {
   }
 }
 
+/* ? Top on Tablet Screen */
+
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
+  .top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+  }
+  .profile-pic {
+    width: calc(100% / 3.5);
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.2);
+    margin: 30px 40px 30px 15px;
+  }
+  #about {
+    margin: 130px 0px 100px 0px;
+    box-shadow: 0px 1px 15px rgba(0, 0, 0, 0.1);
+    width: calc(100% / 1.2);
+    border: 1px solid rgb(0, 0, 0, 0.1);
+  }
+
+  .about-text {
+    border-top: none;
+    border-left: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 10px 10px 0px 40px;
+  }
+
+  #headline {
+    width: calc(100% / 1.2);
+    font-size: 1.5rem;
+  }
+
+  #headline .label {
+    font-size: 1.5rem;
+  }
+}
+
 /* ! Software Engineering Stack */
 
 .stack {
@@ -481,7 +519,7 @@ li p {
 
 /* ? Stack on Tablet Screen */
 
-@media only screen and (min-width: 601px) and (max-width: 768px)  {
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
   .stack {
     height: auto;
     margin: 50px 0px 0px 0px;
@@ -655,6 +693,56 @@ h4 span {
   }
 }
 
+/* ? Projects on Tablet Screen */
+
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
+  .projects h1 {
+    margin: 10px 0px 30px 0px;
+    font-size: 3rem;
+  }
+
+  .projects {
+    height: auto;
+  }
+
+  .project-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .projects-col-one {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+
+  .projects-col-two {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 30px;
+  }
+
+  .proj {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .proj h4 {
+    margin-top: 15px;
+  }
+
+  h4 span {
+    font-size: 1.5rem;
+  }
+}
+
 /* ! Popups */
 
 #popup-container {
@@ -791,6 +879,54 @@ h4 span {
 
 /* ! */
 
+/* ? Popups on Tablet Screen */
+
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
+  #popup-container {
+    overflow: scroll;
+  }
+  
+  .popup {
+    top: 40px;
+    width: calc(100% / 1.1);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .popup h4 span {
+    font-size: 1.7rem;
+  }
+
+  .popup h4 {
+    margin: 30px 0px;
+  }
+  
+  .img-container {
+    width: 100%;
+  }
+  
+  .popup-text {
+    width: 100%;
+    border-left: none;
+    padding: 0 0 0 0;
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .popup-text p {
+    font-size: 1.5rem;
+    margin: 15px 0px 0px 0px;
+  }
+  
+  .popup-link {
+    margin: 40px 0px 20px 0px;
+  }
+  
+  .popup-link a {
+    font-size: 1.7rem;
+  }
+}
+
 /* More Section */
 
 .bottom {
@@ -891,6 +1027,55 @@ div#bottom {
   }
 }
 
+/* ? More on Tablet Screen */
+
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
+  .bottom {
+    height: auto;
+    background-color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+  }
+
+  div#bottom {
+    margin: 40px;
+  }
+
+  #more {
+    margin-top: 50px;
+    width: calc(100% / 1.1);
+  }
+
+  #bottom .label {
+    font-size: 2rem;
+  }
+
+  .more-text {
+    margin: 30px;
+  }
+
+  .more-text h4 {
+    font-size: 1.5rem;
+  }
+
+  .more-text p {
+    font-size: 1.7rem;
+  }
+
+  #more hr {
+    margin: 40px 0px;
+  }
+
+  .more-text img {
+    max-width: 100%;
+    margin-top: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+}
+
 /* Footer */
 
 footer {
@@ -906,4 +1091,13 @@ footer {
 footer p {
   font-size: 0.8rem;
   font-weight: lighter;
+}
+
+/* ? Footer on Tablet Screen */
+
+@media only screen and (min-width: 601px) and (max-width: 820px)  {
+  footer p {
+    font-size: 1.5rem;
+    font-weight: lighter;
+  }
 }
